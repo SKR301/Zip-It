@@ -1,9 +1,9 @@
 import shutil
 import os
+from tkinter.tix import DirSelectBox
 
 def optimizeDir(dir):
-    for ch in dir:
-        print(ch)
+    print(dir)
 
 def writeDirInFile(dir):
     cmd = "dir "+dir+"/b>dir.txt"
@@ -21,9 +21,7 @@ def zipIt(folderList):
         shutil.make_archive(dir+"\\"+folderName, "zip", dir+"\\"+folderName)
 
 if __name__=="__main__":
-    # dir = input("Enter complete directory to folders:")
-    dir = "D:\\NewFolder"
-    # dir = optimizeDir(dir)
-    writeDirInFile(dir)
+    dir = str(input("Enter complete directory to folders:"))
+    writeDirInFile("\""+dir+"\"")
     folderList = readToTuple()
     zipIt(folderList)
