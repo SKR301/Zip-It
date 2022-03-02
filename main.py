@@ -1,23 +1,29 @@
 import shutil
 import os
 
-dir = "D:\\NewFolder\\"
+def optimizeDir(dir):
+    for ch in dir:
+        print(ch)
 
-def writeFolders():
+def writeDirInFile(dir):
     cmd = "dir "+dir+"/b>dir.txt"
     os.system(cmd)
 
-
-if __name__=="__main__":
-    # dir = input("Enter complete directory to folders:")
-    # optimizeDir()
-    writeFolders()
-
+def readToTuple():
     dirFile = open("dir.txt","r")
     folders = dirFile.read()
-    folderList = tuple(map(str, folders.split('\n')))
+    return tuple(map(str, folders.split('\n')))
 
+def zipIt(folderList):
     for folderName in folderList:
         if(folderName == ''):
             continue
-        shutil.make_archive(dir+folderName, "zip", dir+folderName)
+        shutil.make_archive(dir+"\\"+folderName, "zip", dir+"\\"+folderName)
+
+if __name__=="__main__":
+    # dir = input("Enter complete directory to folders:")
+    dir = "D:\\NewFolder"
+    # dir = optimizeDir(dir)
+    writeDirInFile(dir)
+    folderList = readToTuple()
+    zipIt(folderList)
