@@ -1,9 +1,6 @@
 import shutil
 import os
 
-def optimizeDir(dir):
-    print(dir)
-
 def writeDirInFile(dir):
     cmd = "dir "+dir+"/b>dir.txt"
     os.system(cmd)
