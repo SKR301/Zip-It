@@ -1,2 +1,2 @@
 # Zip-It
-A python script to zip folders. `v0.1.0`
+A python script to zip folders. `v0.2.0`
