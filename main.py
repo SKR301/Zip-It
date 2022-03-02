@@ -1,6 +1,5 @@
 import shutil
 import os
-from tkinter.tix import DirSelectBox
 
 def optimizeDir(dir):
     print(dir)
