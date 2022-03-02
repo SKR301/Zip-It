@@ -12,8 +12,7 @@ if __name__=="__main__":
 
     dirFile = open("dir.txt","r")
     folders = dirFile.read()
-    folder = tuple(map(str, folders.split('\n')))
+    folderList = tuple(map(str, folders.split('\n')))
 
-    
-
-    # shutil.make_archive("simonsZip", "zip", "files")
+    for folderName in folderList:
+        shutil.make_archive(dir+"\\"+folderName, "zip", dir+"\\"+folderName)
