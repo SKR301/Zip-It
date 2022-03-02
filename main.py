@@ -6,7 +6,7 @@ def optimizeDir(dir):
 
 def writeDirInFile(dir):
     cmd = "dir "+dir+"/b>dir.txt"
-    x = os.system(cmd)
+    os.system(cmd)
 
 def readToTuple():
     dirFile = open("dir.txt","r")
