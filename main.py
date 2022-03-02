@@ -3,6 +3,9 @@ import os
 
 dir = "D:\\NewFolder"
 
-if __name__=="__main__":
-    cmd = "dir "+dir+"/b"
+def writeFolders():
+    cmd = "dir "+dir+"/b>dir.txt"
     os.system(cmd)
+
+if __name__=="__main__":
+    writeFolders()
