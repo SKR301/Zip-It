@@ -1,5 +1,5 @@
 # Zip-It
-A python script to zip folders. `v0.2.0`
+A python script to zip folders. `v0.2.2`
 
 ## Table of Content
   - [Technologies](#technologies)
