@@ -30,7 +30,7 @@ if __name__=="__main__":
     try:
         dir,type = readArgv()
     except:
-        print("Zip-Itv0.2.1!!!This program require 2 arguments. \n\tpython main.py [directory] [type] \n\n\t[directory]: complete location of the folder (in quotes).\n\t[type]: to zip each folder inside the directory(u,U,unique) or to zip the directory itself(p,P,parent)")
+        print("Zip-It v0.2.2!!!This program require 2 arguments. \n\tpython main.py [directory] [type] \n\n\t[directory]: complete location of the folder (in quotes).\n\t[type]: to zip each folder inside the directory(u,U,unique) or to zip the directory itself(p,P,parent)")
         exit()
 
     if type in ('Parent','PARENT','parent','p','P'):
