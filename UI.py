@@ -15,8 +15,9 @@ def openFile():
 
 def Archive():
     print("Archive")
-    make_archive(path, "zip", path)
-    print(path)
+    savepath=filedialog.asksaveasfilename()
+    make_archive(savepath, "zip", path)
+    print(savepath+".zip")
     
 
 
