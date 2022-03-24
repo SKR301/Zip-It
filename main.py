@@ -23,6 +23,8 @@ def zipItUnique(folderList):
 def zipItParent(dir):
     shutil.make_archive(dir, "zip", dir)
 
+'''
+
 if __name__=="__main__":
     dir = ""
     type = ""
@@ -45,3 +47,6 @@ if __name__=="__main__":
 
     else:
         print("!!!Invalid type argument. Enter either U or P")
+
+
+'''
