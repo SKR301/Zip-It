@@ -2,7 +2,10 @@
 from distutils.archive_util import make_archive
 from tkinter import *
 from tkinter import filedialog
+from tkinter import messagebox
 from main import *
+
+
 
 
 path = ""
@@ -55,7 +58,10 @@ def select_dest():
 def Archive():
     global savepath
     global text
-    make_archive(savepath, "zip", path)
+    try:
+        make_archive(savepath, "zip", path)
+    except OSError as ex:
+        messagebox.showinfo("File Error","System Cannot Find Path Specified")  
     text.set('Archive Saved At:'+savepath)
 
 
