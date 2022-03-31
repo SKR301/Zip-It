@@ -1,7 +1,5 @@
 
 from distutils.archive_util import make_archive
-from sre_parse import State
-from telnetlib import STATUS
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
