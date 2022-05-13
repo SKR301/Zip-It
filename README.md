@@ -20,11 +20,5 @@ A python script to zip folders. `v0.2.2`
   4. **Unique(u)**: Convert each individual file inside the provided directory into zip. <br/>
      **Parent(p)**: Convert the provided directory into zip.
   
-  ## Working
-  How the program works:-
-  - It will ask you to enter the input text.
-  - After the input press `Enter`.
-  - You will get it's encode/decoded form.
-  
   ## Contributors
   @SKR301- [Saurav Kumar](https://github.com/SKR301)
